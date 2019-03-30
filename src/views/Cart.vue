@@ -360,10 +360,12 @@ export default {
 			console.log(res.data)
 			   
              for(var i=0;i<res.data.length;i++){
+				           if(res.data[i].product){
 							 res.data[i].product.checked=false
 							 res.data[i].product.id111 = res.data[i]._id
 							 res.data[i].product.id= i
 							 this.products.push(res.data[i].product)
+							 }
 
 						 }
 						 //console.log(this.products)
