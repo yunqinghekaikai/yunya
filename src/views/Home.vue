@@ -50,10 +50,10 @@
 <div class="titlebox">
 			<div class="title">
 				<div class="first">
-					<form >
-						<input  type="text" class="txt" v-model="searchVal" autocomplete="off" @keyup="gaibian"  @blur="show=false" id="otxt" placeholder="全棉时代每满200减100" />
+					<form>
+						<input  type="text" class="txt" v-model="searchVal" autocomplete="off" @keyup="gaibian"  @blur="isShow=false" id="otxt" placeholder="全棉时代每满200减100" />
 						
-	<table class="goodsheet" v-if="show" v-for="(item,id) in products" :key='id'>
+	<table class="goodsheet" v-if="isShow" v-for="(item,id) in products" :key='id'>
 		 <h1>{{item.name}}</h1> 
 	  
 			</table> 
